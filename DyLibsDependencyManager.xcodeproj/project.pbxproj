@@ -15,7 +15,7 @@
 		DA699E812C873B690075369F /* Exceptions for "DyLibsDependencyManager" folder in "DyLibsDependencyManager" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = DA699E6B2C873B650075369F /* DyLibsDependencyManager */;
 		};
@@ -151,7 +151,7 @@
 				DEVELOPMENT_TEAM = QBPW9LPK8E;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DyLibsDependencyManager/Info.plist;
+				INFOPLIST_FILE = DyLibsDependencyManager/Resources/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -178,7 +178,7 @@
 				DEVELOPMENT_TEAM = QBPW9LPK8E;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DyLibsDependencyManager/Info.plist;
+				INFOPLIST_FILE = DyLibsDependencyManager/Resources/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
