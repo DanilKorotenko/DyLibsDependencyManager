@@ -6,7 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DA461F2D2C888FBD00DB6BAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DA461F2F2C888FBD00DB6BAF /* dyldDeps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dyldDeps; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA699E6C2C873B650075369F /* DyLibsDependencyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyLibsDependencyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA699E9A2C873CBA0075369F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -22,6 +35,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		DA461F302C888FBD00DB6BAF /* dyldDeps */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = dyldDeps;
+			sourceTree = "<group>";
+		};
 		DA699E6E2C873B650075369F /* DyLibsDependencyManager */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -33,6 +51,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA461F2C2C888FBD00DB6BAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA699E692C873B650075369F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,6 +73,7 @@
 			children = (
 				DA699E9A2C873CBA0075369F /* README.md */,
 				DA699E6E2C873B650075369F /* DyLibsDependencyManager */,
+				DA461F302C888FBD00DB6BAF /* dyldDeps */,
 				DA699E6D2C873B650075369F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				DA699E6C2C873B650075369F /* DyLibsDependencyManager.app */,
+				DA461F2F2C888FBD00DB6BAF /* dyldDeps */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +90,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA461F2E2C888FBD00DB6BAF /* dyldDeps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA461F332C888FBD00DB6BAF /* Build configuration list for PBXNativeTarget "dyldDeps" */;
+			buildPhases = (
+				DA461F2B2C888FBD00DB6BAF /* Sources */,
+				DA461F2C2C888FBD00DB6BAF /* Frameworks */,
+				DA461F2D2C888FBD00DB6BAF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DA461F302C888FBD00DB6BAF /* dyldDeps */,
+			);
+			name = dyldDeps;
+			packageProductDependencies = (
+			);
+			productName = dyldDeps;
+			productReference = DA461F2F2C888FBD00DB6BAF /* dyldDeps */;
+			productType = "com.apple.product-type.tool";
+		};
 		DA699E6B2C873B650075369F /* DyLibsDependencyManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA699E822C873B690075369F /* Build configuration list for PBXNativeTarget "DyLibsDependencyManager" */;
@@ -94,6 +143,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					DA461F2E2C888FBD00DB6BAF = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					DA699E6B2C873B650075369F = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -114,6 +166,7 @@
 			projectRoot = "";
 			targets = (
 				DA699E6B2C873B650075369F /* DyLibsDependencyManager */,
+				DA461F2E2C888FBD00DB6BAF /* dyldDeps */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +182,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA461F2B2C888FBD00DB6BAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA699E682C873B650075369F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +199,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		DA461F342C888FBD00DB6BAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA461F352C888FBD00DB6BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		DA699E832C873B690075369F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -311,6 +391,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA461F332C888FBD00DB6BAF /* Build configuration list for PBXNativeTarget "dyldDeps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA461F342C888FBD00DB6BAF /* Debug */,
+				DA461F352C888FBD00DB6BAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA699E672C873B650075369F /* Build configuration list for PBXProject "DyLibsDependencyManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
